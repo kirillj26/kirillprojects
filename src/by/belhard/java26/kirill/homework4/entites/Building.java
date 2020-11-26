@@ -19,4 +19,15 @@ public class Building {
         this.godPostroyki = godPostroyki;
     }
 
+    public String toString() {
+        return "=====================\n" +
+                "\nBuilding " +
+                "\nnaznachenie " + naznachenie +
+                "\nadres " + adres +
+                "\nkolichEtazh " + kolichEtazh +
+                "\nlift " + lift +
+                "\nmaterial " + material +
+                "\ngodPostroyki " + godPostroyki +
+                "=====================\n";
+    }
 }

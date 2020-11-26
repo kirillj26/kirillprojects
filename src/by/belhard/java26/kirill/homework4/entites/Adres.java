@@ -8,4 +8,10 @@ public class Adres {
         this.streetName = streetName;
         this.nomerDoma = nomerDoma;
     }
+
+    public String toString() {
+        return
+                " streetName " + streetName +
+                        "\nnomerdoma " + nomerDoma;
+    }
 }

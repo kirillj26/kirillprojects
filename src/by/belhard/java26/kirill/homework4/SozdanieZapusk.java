@@ -17,6 +17,7 @@ public class SozdanieZapusk {
         Building dom3=new Building("Office",new Adres("Denisovskaya",10),
                 20,true,"Steklo",2000);
 
+        System.out.println(dom1);
         //Создание MyClassCup и вызов методов
         MyClassCup cup1 = new MyClassCup();
         cup1.setSoderzhimoe("Кола");

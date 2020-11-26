@@ -26,11 +26,17 @@ public class ArraysCalculator {
 
     public void concatArrays(String[] firstArray, String[] secondArray) {
         if (firstArray.length >= secondArray.length) {
-            for (String x : firstArray)System.out.print(x+" ");
-            for (String x : secondArray)System.out.print(x+" ");
+            for (int i = 0; i < firstArray.length; i++) {
+                if (i < secondArray.length) System.out.print(firstArray[i] + " " + secondArray[i] + " ");
+                else System.out.print(firstArray[i]+" ");
+            }
+
         } else {
-            for (String x : secondArray)System.out.print(x+" ");
-            for (String x : firstArray)System.out.print(x+" ");
+            for (int i = 0; i < secondArray.length; i++) {
+                if (i < firstArray.length) System.out.print(secondArray[i] + " " + firstArray[i] + " ");
+                else System.out.print(secondArray[i]+" ");
+            }
         }
     }
+
 }
